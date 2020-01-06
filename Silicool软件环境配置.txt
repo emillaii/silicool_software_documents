@@ -1,0 +1,40 @@
+需要准备一个移动硬盘
+
+Step1. 装好一台机器的所有环境
+所有软件安装到C盘
+1. 开发环境 
+VS2017
+QTCreator
+2. 数据库驱动
+SQLite 
+3. 常用工具
+SocketTool  
+Serial port utility 
+Vspd 
+Winhex 
+Dependencies
+Debugview
+Eeverything 
+Beyond compare 
+Svn 
+小乌龟
+Teamviewer
+微信
+4. 软件驱动
+motion驱动
+motion相关调试软件
+相机驱动
+相机相关调试软件
+5. 系统设置
+禁用windows自动更新
+关闭防火墙
+
+Step2. 将C盘备份到移动硬盘
+控制面板\系统和安全\备份和还原(Windows 7)\设置备份
+备份整个C盘
+
+Step3. Copy到新电脑
+将包含备份的移动硬盘插入新电脑
+控制面板\系统和安全\备份和还原(Windows 7)\选择其他用来还原文件的备份
+
+
