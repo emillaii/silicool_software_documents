@@ -1,0 +1,2 @@
+V1.0.0.0
+完成zmq pub-sub封装，userManagement,uiHelper,logging,languageManager,configManager模块

@@ -1,0 +1,5 @@
+LocalFile<--->Model <--->UI自动同步
+支持undo，redo，更改配置时自动保存到文件
+加密保存文件
+Log保存更改记录
+根据Model中相关定义，生成简单编辑界面。（生成Label，TextField，CheckBox，ComboBox，是否在UI显示） 
