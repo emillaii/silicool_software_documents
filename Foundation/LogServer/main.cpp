@@ -11,6 +11,8 @@ int main(int argc, char *argv[])
     SetWindowTextA(windowHandle, "LogServer");
     RemoveMenu(GetSystemMenu(windowHandle, false), SC_CLOSE, 0x0);
 
+    ShowWindow(windowHandle, SW_HIDE);
+
     QSharedMemory shared("LogServer");
     if (shared.attach())
     {
@@ -19,7 +21,7 @@ int main(int argc, char *argv[])
     }
     shared.create(1);
 
-    LogToFileHandler logServer(true);
+    LogToFileHandler logServer(false);
     logServer.init();
 
     return a.exec();
