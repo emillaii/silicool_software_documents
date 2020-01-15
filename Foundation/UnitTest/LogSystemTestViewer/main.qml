@@ -5,27 +5,18 @@ import "LogViewer"
 
 Window {
     visible: true
-    width: 1600
-    height: 900
-    title: qsTr("Hello World")
+    width: 1000
+    height: 700
+    title: qsTr("LogViewer")
     color: "black"
 
-    ColumnLayout{
+    LogViewContainer{
+        logToViewerHandler: logHandler
+
         anchors.fill: parent
 
-        Rectangle{
-            width: parent.width
-            height: 300
-        }
-        LogViewContainer{
-            logToViewerHandler: logHandler
-
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-
-            Component.onCompleted: {
-                init()
-            }
+        Component.onCompleted: {
+            init()
         }
     }
 }

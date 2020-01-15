@@ -30,6 +30,8 @@ CONFIG(debug, debug|release){
     MOC_DIR = ./Release/Mocs
 }
 
+RC_ICONS = logServer.ico
+
 SOURCES += main.cpp
 
 # Default rules for deployment.
